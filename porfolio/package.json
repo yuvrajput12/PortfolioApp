@@ -1,5 +1,6 @@
 {
   "name": "porfolio",
+  "homepage": "http://{yuvrajput12}.github.io/{PortfolioApp}",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +12,12 @@
     "react-dom": "^18.2.0",
     "react-icon": "^1.0.0",
     "react-icons": "^4.7.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^2.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-minimizer-webpack-plugin": "^4.2.2"
   }
 }
